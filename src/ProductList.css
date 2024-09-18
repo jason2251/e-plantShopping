@@ -39,6 +39,18 @@ body {
    
 }
 
+.cart-count {
+    position: absolute;
+    top: 35px;      /* Adjust this value to position it vertically */
+    right: 33px;    /* Adjust this value to position it horizontally */
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /* Product Grid */
 .product-grid {
     display:flex;
