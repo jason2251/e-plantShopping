@@ -16,8 +16,7 @@ const CartItem = ({ onContinueShopping }) => {
     return totalAmount.toFixed(2);
   };
 
-  const handleContinueShopping = (e) => {
-    e.preventDefault();
+  const handleContinueShopping = () => {
     onContinueShopping(); // Correctly invoke the prop function
   };
 
@@ -90,7 +89,7 @@ const CartItem = ({ onContinueShopping }) => {
       <div className="continue_shopping_btn">
         <button
           className="get-started-button"
-          onClick={(e) => handleContinueShopping(e)}
+          onClick={() => handleContinueShopping()}
         >
           Continue Shopping
         </button>
